@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>💣 Minesweeper Master</h1>
+            <p>Classic Minesweeper Game</p>
+        </div>
+
+        <div class="controls">
+
+            <select id="difficulty">
+                <option value="easy">Easy (9×9, 10 Mines)</option>
+                <option value="medium">Medium (16×16, 40 Mines)</option>
+                <option value="hard">Hard (16×30, 99 Mines)</option>
+            </select>
+
+            <button id="newGame">New Game</button>
+            <button id="resetGame">Reset</button>
+            <button id="resetStats">Reset Stats</button>
+
+        </div>
+
+        <div class="info">
+            <span>🚩 Mines Left: <span id="mineCount">10</span></span>
+            <span>⏱ Time: <span id="timer">0</span>s</span>
+        </div>
+
+        <h2 id="message"></h2>
+
+        <div id="board"></div>
+
+        <div class="stats">
+            <h3>Statistics</h3>
+
+            <p>Games Played:
+                <span id="gamesPlayed">0</span>
+            </p>
+
+            <p>Win Rate:
+                <span id="winRate">0</span>%
+            </p>
+
+            <p>
+                Best Easy:
+                <span id="bestEasy">-</span>s
+            </p>
+
+            <p>
+                Best Medium:
+                <span id="bestMedium">-</span>s
+            </p>
+
+            <p>
+                Best Hard:
+                <span id="bestHard">-</span>s
+            </p>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
